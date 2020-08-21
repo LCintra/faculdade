@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Safeplanet</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="img/icone2.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<style>
+    #mapa {
+        height:400px
+    }
+</style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <div id="conteudo">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div id="cabeçario1">
+                <a class="navbar-brand" href="index.html">
+                    <h1>SafePlanet</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>   
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <div id="cabeçario2">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="campanhas.html">Campanhas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="apoio.html">Apoio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="parceiros.html">Parceiros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobrenos.html">Sobre</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="contato">
+        <h2>Contato</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.1145350468723!2d-46.644498469593586!3d-23.596116288938962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a25b6d554a9%3A0x79b613bb67be94e9!2sR.%20Dr.%20Diogo%20de%20Faria%20-%20Vila%20Clementino%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1582659198590!5m2!1spt-BR!2sbr" 
+        width="600" 
+        height="450" 
+        frameborder="0" 
+        style="border:0;" 
+        allowfullscreen=""
+        id="mapa">
+        </iframe>
+        <div id="container2">
+        <p class="icone">
+            <img src="img/email.png" class="iconesimg"><a href="mailto:contatosafeplanet@gmail.com">contatosafeplanet@gmail.com</a>
+        </p>
+        <p class="icone">
+            <img src="img/telefone.png" class="iconesimg"><a href="tel:16963580988">(16)96358-0988</a>
+        </p>
+        <p class="icone">
+            <img src="img/local.jpg" class="iconesimg">Rua Dr. Diogo de Faria - Vila Clementino,São Paulo-SP
+        </p>
+    </section>
+    <div id="formulario">
+        <form action="http://www.safeplanet.com.br/api/cliente">
+            <label>
+                <p class="formname">Nome:</p>
+                <p><input type="text"></p>
+            </label>
+            <label>
+                <p class="formname">Sexo:</p>
+                <p>Masculino:<input type="radio" name="sexo"><br>Feminino:<input type="radio" name="sexo"></p>
+            </label>
+            <label>
+                <p class="formname">E-mail:</p>
+                <p><input type="email" id="campomail"></p>
+            </label>
+            <label>
+                <p class="formname">Mensagem:</p>
+                <p><input type="textarea" resize="none" id="campotext"> </p>
+            </label>
+            <label id="submit">
+                <button type="submit">Confirmar Envio</button>
+            </label>
+        </form>
+    </div>
+</div>
+<footer>
+    <div id="container3">
+        <div id="rodape">Desenvolvido por Alunos UNI-FACEF,Trabalho Programação de Computadores I,Professor Daniel</div>
+        <a href="https://www.youtube.com/channel/SafePlanet" target="blank"><img src="img/youtube.png" class="icone2"></a>  
+        <a href="https://pt-br.facebook.com/safeplanet/" target="blank"> <img src="img/facebook.png" class="icone2"></a>
+        <a href="https://www.instagram.com/Safeplanett/?hl=pt-br" target="blank"><img src="img/instagram.png" class="icone2"></a>
+    </div>
+</footer>
+
+</body>
+</html>

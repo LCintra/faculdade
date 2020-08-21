@@ -1,0 +1,9 @@
+.features_icon {
+    width:100px;
+    height:100px
+}
+
+.features_layout {
+    display:Flex;
+    justify-content: space-around;
+}

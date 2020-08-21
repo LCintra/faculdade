@@ -1,0 +1,128 @@
+body{ 
+    display:flex; 
+    flex-direction:column; 
+    height:100%;
+    margin:0
+  }
+html {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    margin: 0px,8px,0px,8px
+}
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+}
+nav li {
+    padding-right:20px;
+    font-size: 16px;
+}
+.nav_icon {
+    width: 40px;
+    height: 40px;
+}
+.nav_t {
+    padding-top:10px
+}
+.search_section {
+    padding-top:100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search_bar {
+    width:600px;
+    height:30px;
+    border-radius: 20px;
+    border: solid rgb(218, 217, 217) 2px;
+    background-image: url("../assets/imgs/lupa_icon.png");
+    background-position:left;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding-left:25px
+}
+.search_bar:focus {
+    outline-width: 0;
+}
+.big_logo {
+    width:272px;
+    height: 92px;
+}
+.bar_icon {
+    width:25px;
+    height:30px;
+    padding-right: 10px;
+    
+}
+.div_buttons {
+    margin-top:20px;
+    display:flex
+}
+.search_buttons {
+    margin-right: 15px;
+    background-color:rgb(243, 239, 239);
+    color:rgb(136, 133, 133);
+    border:none;
+    width:130px;
+    height:30px
+}
+.search_buttons:hover {
+    color:black;
+    border:solid gray 1px
+}
+.search_phrase {
+    padding-top:20px;
+    color:blue
+}
+.phrase_ancor {
+    text-decoration: none;
+}
+.translation_button {
+    display:inline;
+}
+.country {
+    padding-left:20px
+}
+.footer_country {
+    background-color: rgb(247, 245, 245);
+    border: solid 0.25px rgb(226, 226, 226);
+    color:rgb(129, 125, 125);
+}
+.footer_bar {
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: space-between;
+    background-color:rgb(247, 245, 245);
+    border: solid 0.25px rgb(226, 226, 226);
+    color:rgb(129, 125, 125);
+}
+.footer_bar ul {
+    display:flex;
+}
+.footer_bar ul li {
+    list-style:none;
+    padding-right: 15px;
+}
+footer{
+    margin-top:auto; 
+  }
+.left_bar {
+    margin-left:-20px
+}
+ul a:hover {
+    text-decoration: underline;
+}
+ul a:visited {
+    color: inherit;
+}
+@media only screen and (max-width:700px) {
+    .search_bar {
+        width:70%
+    }
+    .footer_bar {
+        max-width: 700px;
+    }
+}
