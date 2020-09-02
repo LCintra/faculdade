@@ -1,7 +1,6 @@
     function principal(){
-        var opcao
-        var vendedor = []
-        var vendas = []
+        let vendedor = []
+        let vendas = []
         do {
             var opcao = Number(prompt(`Qual opção deseja? \n
             [1] - Cadastrar Vendedor \n
@@ -56,7 +55,7 @@
         } while(opcao != 7)
     }
     function entvend(v){
-        var cod = prompt(`Qual o Código do vendedor?`)
+        let cod = prompt(`Qual o Código do vendedor?`)
         if(v.indexOf(cod)!= -1){
             alert(`Código já cadastrado`)
         } else {
@@ -65,8 +64,8 @@
         }
     }
     function entvendas(v,v2){
-        var venda = new Object()
-        var achei = 0
+        let venda = new Object()
+        let achei = 0
         venda.cod = prompt(`Qual o código do vendedor que realizou a venda?`)
         if(v2.indexOf(venda.cod)==-1){
             alert(`Esse código de vendedor não está registrado`)
@@ -77,7 +76,7 @@
         for(var i = 0;i!=v.length;i++){
             if(v[i].cod==venda.cod&&v[i].mes==venda.mes&&v[i].codv==venda.codv){
                 alert(`Essa venda ja foi registrada nesse mês para esse funcionário`)
-                var achei = 1
+                achei = 1
                 return
             }
         }
@@ -87,28 +86,29 @@
         alert(`Vendas Adicionadas com Sucesso`)
     }
 function consultavendames(v,v2){
-    var vendas = []
-    var vendedor = prompt(`Qual o Código do vendedor que deseja buscar?`)
+    let vendas = []
+    let vendedor = prompt(`Qual o Código do vendedor que deseja buscar?`)
     if(v2.indexOf(vendedor)==-1){
         alert(`Esse código de vendedor não está registrado`)
         return 
     }
-    var mes = prompt(`Qual o mês da venda?`).toUpperCase()
-    var achei = 0
+    let mes = prompt(`Qual o mês da venda?`).toUpperCase()
+    let achei = 0
     for(var i = 0;i!=v.length;i++){
         if(v[i].cod==vendedor&&v[i].mes==mes){
             vendas.push(v[i].info)
-            var achei = 1
+            achei = 1
         }
     }
     if(achei==0){
         alert(`Não foi localizado vendas para esse vendedor nesse mês`)
+    } else{
+        alert(`As vendas foram ${vendas}`)
     }
-    alert(`As vendas foram ${vendas}`)
 }
 function totvendas(v,v2){
-    var acum = 0
-    var vendedor = prompt(`Qual o código do vendedor que deseja consultar?`)
+    let acum = 0
+    let vendedor = prompt(`Qual o código do vendedor que deseja consultar?`)
     if(v2.indexOf(vendedor)==-1){
         alert(`Esse código de vendedor não está registrado`)
         return 
@@ -121,10 +121,10 @@ function totvendas(v,v2){
     alert(`A soma das vendas de ${vendedor} é R$${acum}`)
 }
 function maiorvend(v,v2){
-    var mes = prompt(`Qual o mês que deseja verificar?`).toUpperCase()
-    var maior = v2[0]
-    var maiorquant = 0
-    var contador = 0
+    let mes = prompt(`Qual o mês que deseja verificar?`).toUpperCase()
+    let maior = v2[0]
+    let maiorquant = 0
+    let contador = 0
     for(var i=0;i!=v2.length;i++){
         for(var j=0;j!=v.length;j++){
             if(v2[i]==v[j].cod&&v[j].mes==mes){
@@ -140,10 +140,10 @@ function maiorvend(v,v2){
     alert(`O indivíduo que mais vendeu nesse mês foi ${maior} com ${maiorquant} vendas`)
 }
 function mesvend(v){
-    var meses = []
-    var maior = 0
-    var maiorquant = 0
-    var contador = 0
+    let meses = []
+    let maior = 0
+    let maiorquant = 0
+    let contador = 0
     for(vendas of v){
         if(meses.indexOf(vendas.mes)==-1){
             meses.push(vendas.mes)
