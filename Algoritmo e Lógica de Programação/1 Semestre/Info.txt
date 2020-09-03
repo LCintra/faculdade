@@ -1,0 +1,1 @@
+Início de Lógica com Portugol em visualg - Declaração de Variáveis,Estruturas Condicionais, Estruturas de Repetição, Vetores

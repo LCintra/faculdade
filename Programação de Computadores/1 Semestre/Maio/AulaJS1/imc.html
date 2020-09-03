@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Calculadora do IMC </title>
+    <script src="assets/javascript/imc.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <h3> Calculadora do IMC </h3>
+        <div class="row">
+            <p>
+                <div class="col-sm-6">
+                    <label for="peso"> Informe seu peso </label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="peso">
+                </div>
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                <div class="col-sm-6">
+                    <label for="altura"> Informe sua altura </label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="altura">
+                </div>
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                <!-- botão que quando executado chama a função calcula() -->
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-primary" onClick="calcula()"> Calcula </button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-primary" >Limpar</button>
+                </div>
+            </p>
+        </div>
+        <p>
+            <div class="row">
+                <div class="col-sm-6">
+                    IMC
+                </div>
+                <div class="col-sm-6">
+                    <h5 id="imc"> </h5>
+                </div>
+            </div>
+        </p>
+    </div>
+</body>
+
+</html>

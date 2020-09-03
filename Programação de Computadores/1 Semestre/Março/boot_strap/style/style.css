@@ -1,0 +1,25 @@
+section {
+    font:20px Arial
+}
+#nav_icon {
+    width:75px;
+    height:75px
+}
+.navbar {
+    background-color: #B4F51E;
+}
+.body_img {
+    width:450px;
+    height: 300px;
+}
+.margin {
+    padding-top:45px;
+    padding-bottom:45px
+}
+.full {
+    width:100%
+}
+.bg_footer {
+    background-color: black;
+    color:white;
+}

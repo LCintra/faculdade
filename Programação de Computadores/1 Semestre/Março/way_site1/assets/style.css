@@ -1,0 +1,757 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+}
+.container {
+    margin-right:100px;
+    margin-left:100px;
+}
+header {
+    background-color: black;
+}
+.div_menu {
+    max-width: 1140px;
+    display:flex;
+    width:100%;
+    height: 100px;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_logo {
+    width:80px;
+    height:50px
+}
+nav ul {
+    display:flex;
+    list-style: none;
+}
+nav ul li {
+    padding:15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    color:white;
+}
+nav ul a {
+    text-decoration:none
+}
+nav ul li:hover {
+    border-bottom: white 1px solid;
+}
+.banner {
+    background-image: url(../assets/img/banner.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height:700px;
+    background-size: 100vw;
+    width:99vw;
+    overflow:hidden
+}
+.sliders {
+    overflow: hidden;
+    width:297vw;
+    height:100%;
+    display:flex;
+}
+.slide {
+    height:700px;
+    background-color:rgba(0, 0,0, 0.8);
+    width:99vw;
+}
+.div_banner1 {
+    display:flex;
+    flex-direction: column;
+    font-family: 'Baloo Thambi 2', cursive;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:700px;
+    width:99vw;
+}
+.banner_subtitle1 {
+    display:inline-block;
+    font-size: 60px;
+    width:550px;
+    color:white;
+    font-family: 'Do Hyeon', sans-serif;;
+}
+.banner_subtitle2 {
+    display:inline-block;
+    font-size: 60px;
+    width:550px;
+    padding-left:90px;
+    color:#CFB53B;
+    font-family: 'Do Hyeon', sans-serif;;
+}
+.banner_contact {
+    display:inline-block;
+    color:white;
+    font-family: 'Do Hyeon', sans-serif;;
+    padding-right:30px;
+}
+.banner_button {
+    color:white;
+    display:inline-block
+}
+.banner_button a{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    background-color:#CFB53B;
+    padding:7px;
+    margin-top:10px;
+    border-radius:20px;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-right: 30px;
+}
+.sliders_pointers {
+    width:99vw;
+    height:20px;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top:-50px
+}
+.pointer {
+    cursor:pointer;
+    width:16px;
+    height:16px;
+    display:inline-block;
+    border:Solid 2px #CFB53B;
+    border-radius:8px ;
+    margin-right:15px
+}
+.active {
+    background-color:#CFB53B ;
+    z-index: 2;
+}
+.aboutus_title {
+    color: black;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+.aboutus_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+}
+.aboutus_div {
+    display:flex;
+    justify-content: center;
+}
+.aboutus_text {
+    font-size:14px;
+    color:black;
+    width:500px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding-right: 10px;
+}
+.aboutus_videow {
+    width:350px;
+    height:200px
+}
+.aboutus_button {
+    font-size: 16px;
+    display:inline-block;
+    position:relative;
+    left:140px;
+    top:30px
+}
+.aboutus_buttonstyle {
+    text-decoration: none;
+    color:white;
+    background-color:#CFB53B;
+    font-family: 'Do Hyeon', sans-serif;
+    padding:14px;
+    border-radius:20px;
+}
+#services_section {
+    background-color: black;
+    height:270px
+}
+.services_title {
+    color:white;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px
+}
+.services_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+.services_div {
+    display:flex;
+    justify-content: center;
+}
+.service_1 , .service_2 , .service_3 , .service_4 {
+    padding-right: 40px;
+    padding-left:40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-right:1px rgb(49, 49, 49) solid;
+    border-left:1px rgb(49, 49, 49) solid;
+}
+.service_icons {
+    width:40px;
+    height:40px;
+}
+.service_content {
+    width:120px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.service_explanation {
+    color:gray;
+    font-size:13px;
+    width:180px;
+    text-align: center; 
+}
+.projects_title {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px
+}
+.projects_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+.project_filter {
+    background-color: rgb(229, 226, 226);
+    border-radius: 30px;
+    border:1px solid #999;
+    text-align: center;
+    width:680px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:30px
+}
+.project_menu_list li {
+    display:inline-block;
+    list-style:none;
+    padding-right: 15px;
+    padding-left:15px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.project_menu_list li:hover {
+    border-bottom: #CFB53B solid 2px;
+}
+.project_menu_list a:last-child {
+    border-right:0px
+}
+.project_menu_list a {
+    text-decoration:none;
+    color:black;
+    border-right:1px rgb(49, 49, 49) solid;
+}
+.project_area {
+    display:flex;
+    justify-content:center
+}
+.project_images {
+    width: 1100px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.project_imagew {
+    position: absolute;
+    z-index:1;
+    margin: 10px;
+    width:250px;
+    height: 150px;
+}
+.project-photo-area {
+    width:270px;
+    height: 170px;
+}
+.project-photo-area:hover .project_imagew {
+    margin:10px;
+    position: absolute;
+    z-index: 0;
+}
+.photo-info {
+    font-family: 'Do Hyeon', sans-serif;
+    color:white;
+    margin:10px;
+    background-color: rgba(0, 0,0, 0.8);
+    z-index: 1;
+    text-align: center;
+    width:250px;
+    height:150px;
+    position: absolute;
+    cursor:pointer
+}
+#ourteam_banner {
+    background-image: url(../assets/img/banner2.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height:700px;
+    background-size: 100vw;
+    width:99vw;
+    overflow:hidden
+}
+.ourteam_title {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px;
+    color:white
+}
+.ourteam_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+.ourteam_place {
+    display:flex;
+    justify-content: center;
+}
+.person1, .person2, .person3 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:30px;
+    width:300px;
+    height:450px;
+    background-color: white;
+}
+.people_photo {
+    margin-top:60px;
+    width:150px;
+    height:150px;
+    border-radius: 75px;
+}
+.person_title {
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.person_subtitle {
+    color:rgb(54, 54, 54);
+    font-size:14px;
+    position:relative;
+    bottom:20px
+}
+.socialmidia_icons {
+    width:25px;
+    height:25px;
+    margin-right: 20px;
+    display:inline-block;
+    cursor:pointer
+}
+.people_socialmidia {
+    width:100%;
+    justify-content: center;
+    margin-top: 20px;
+    display:flex 
+}
+.socialmidia_icons:hover {
+    filter: invert(81%) sepia(26%) saturate(1083%) hue-rotate(3deg) brightness(88%) contrast(87%)
+}
+.clients_title {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px;
+    color:rgb(0, 0, 0)
+}
+.clients_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+#clients {
+    height:700px;
+    overflow:hidden;
+}
+.client_place {
+    display:flex;
+    align-items: center;
+    flex-direction: column;   
+}
+.client_photo {
+    width:180px;
+    height:180px;
+    border-radius: 90px;
+}
+#clients .slide {
+    background-color: rgb(243, 237, 237);
+    height:700px;
+    width:99vw;
+}
+#clients .sliders {
+    overflow: hidden;
+    width:297vw;
+    height:100%;
+    display:flex;
+}
+.aspas_icon {
+    width:50px;
+    height: 50px;
+}
+.client_text {
+    color:gray;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width:600px
+}
+.enterprises_div {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.enterprise_icons {
+    display:inline-block;
+    width:200px;
+    height:120px
+}
+#prices_section {
+    height:500px;
+    background-color: rgb(243, 237, 237);
+}
+.prices_title {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px;
+    color:rgb(0, 0, 0)
+}
+.prices_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+.prices_div {
+    display:flex;
+    justify-content: center;
+    position:relative
+}
+.price_box1, .price_box2, .price_box3, .price_box4 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    background-color: white;
+    width:250px;
+    height:400px;
+}
+.prices_div ul {
+    list-style: none;
+    color:gray;
+    font-family: 'Do Hyeon', sans-serif
+}
+.prices_div li {
+    margin-top:8px;
+}
+.prices_div h4 {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 30px;
+    margin-bottom:-30px
+}
+.dollars_price {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.pay_time {
+    color:gray;
+    font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    top:100px;
+    font-size:12px
+}
+.buy_button {
+    margin-left: 30px;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top:20px;
+    font-family: 'Do Hyeon', sans-serif;
+    background-color:rgb(0, 0, 0);
+    width:150px;
+    height:70px;
+    border-radius: 10px;
+    cursor:pointer
+}
+.buy_button:hover {
+    background-color:#CFB53B;
+}
+.premium_kit {
+    height:700px;
+    overflow:hidden;
+    width:99vw;
+}
+.premium_title {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px;
+    color:rgb(0, 0, 0)
+}
+.premium_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+.premium_div {
+    display:flex;
+    justify-content: center;
+}
+.premiumbox_style {
+    width:300px;
+    height:450px;
+}
+.premiumbox_content {
+    bottom:45px;
+    position:relative;
+    margin-left:70px;
+    display:Flex;
+    flex-direction: column;
+}
+.checkicon {
+    width:30px;
+    height:30px;
+    position:relative;
+    right:40px;
+    top:40px;
+}
+.premiumbox_content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px
+}
+.premiumbox_content p {
+    font-size:14px;
+    color:gray;
+    font-family: 'Do Hyeon', sans-serif
+}
+.premium_kit .slide {
+    background-color: rgb(255, 255, 255);
+    height:700px;
+    width:99vw;
+}
+.premiumkit .sliders {
+    overflow: hidden;
+    width:297vw;
+    height:100%;
+    display:flex;
+}
+#somefacts {
+    position:relative;
+    bottom:40px;
+    height:350px;
+    background-color: black;
+}
+.somefacts_title {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px;
+    color:rgb(255, 255, 255)
+}
+.somefacts_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+.somefacts_div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fact1, .fact2, .fact3, .fact4 {
+    margin-right: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.somefacts_div h3 {
+    border-top: white solid 1px;
+    position:relative;
+    color:White;
+    font-family: 'Baloo Thambi 2', cursive;
+    bottom:150px;
+}
+.somefacts_div h2 {
+    bottom:80px;
+    position:relative;
+    font-size:50px;
+    color:#CFB53B;
+    font-family: 'Do Hyeon', sans-serif
+}
+.somefacts_div p {
+    position:relative;
+    left:20px;
+    bottom:100px;
+    width:200px;
+    color:white;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#contactus {
+    height:400px;
+    background-color: rgb(243, 237, 237);
+    position:relative;
+    bottom:70px
+}
+.contactus_title {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size:25px;
+    color:rgb(0, 0, 0)
+}
+.contactus_subtitle {
+    color:gray;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    font-size:15px
+}
+.form_div {
+    display:flex;
+    justify-content: center;
+}
+.form_div form {
+    display:Flex;
+    flex-direction: column;
+}
+.form_div input:not(.enviar) {
+    background-color:rgb(243, 237, 237) ;
+    margin-bottom: 60px;
+    border-style: none;
+    border-bottom: solid 2px rgb(175, 172, 172);
+}
+.form_div input:focus {
+    outline: none;
+}
+.enviar {
+    background-color:#CFB53B;
+    border:0px;
+    width:200px;
+    border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:70px
+}
+.local {
+    height:350px;
+    position: relative;
+    bottom:70px;
+}
+.local_div {
+    position:relative;
+    bottom:300px;
+    left:100px;
+    width:400px;
+    height:240px;
+    background-color: rgb(255, 255, 255);
+    display:Flex;
+    flex-direction: column;
+}
+.map {
+    width:100%;
+    position:relative
+}
+.local_div p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+.local_icon {
+    margin-top:-5px;
+    width:25px;
+    height:25px
+}
+footer {
+    position:relative;
+    top:80px;
+    background-color: black;
+    display:block;
+    margin-top:auto
+}
+.footer_div {
+    display:flex;
+    justify-content: center;
+}
+.footer_left, .footer_mid, .footer_right {
+    margin-right: 50px;
+    display:flex;
+    flex-direction: column;
+}
+.disclaimer {
+    color:white;
+    width:300px;
+    font-family: 'Do Hyeon', sans-serif
+}
+.footer_socialmidia_icons {
+    width:25px;
+    height:25px;
+    display:inline-block;
+    cursor:pointer
+}
+.footer_right {
+    margin-top:100px;
+}
+.footer_right input:not(.enviar_footer) {
+    color:white;
+    background:black;
+    border:0;
+    border-bottom:solid 2px gray;
+}
+.footer_right input:focus {
+    outline:none
+}
+.footer_left p {
+    margin-top:200px;
+    color:white;
+    font-family: 'Baloo Thambi 2', cursive
+}
+.enviar_footer {
+    margin-top: 30px;
+    background-color:#CFB53B;
+    border:0px;
+    width:200px;
+    border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer_socialmidia_icons:hover {
+    filter: invert(81%) sepia(26%) saturate(1083%) hue-rotate(3deg) brightness(88%) contrast(87%)
+}
+/*font-family: 'Baloo Thambi 2', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Do Hyeon', sans-serif;;/*
