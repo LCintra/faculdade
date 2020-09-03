@@ -1,1 +1,0 @@
-Avançando nos estudos de JS, início de modularização de programas
