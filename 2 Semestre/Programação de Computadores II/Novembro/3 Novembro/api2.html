@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Filmes</title>
+    <link rel="stylesheet" href="api2style.css">
+    <script src="api2js.js"></script>
+</head>
+<body>
+    <h2>Consulta de Filmes</h2>
+    <div id="container">
+        <div>
+            <label>
+                Informe o Nome do Filme
+                <input type="text" id="nomedofilme">
+            </label>
+            <button onclick="consomeAPI()">Verificar</button>
+        </div>
+        <hr>
+        <div id="container2">
+            <div id ="blocoimg">
+                <img id="imag">
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Título:</h4><h4 id="titulo"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Ano:</h4><h4 id="ano"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Rated:</h4><h4 id="rated"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Data:</h4><h4 id="data"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Tamanho:</h4><h4 id="tamanho"></h4> 
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Gênero:</h4><h4 id="genero"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Diretor:</h4><h4 id="diretor"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Escritor:</h4><h4 id="escritor"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Atores:</h4><h4 id="atores"></h4>   
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Resumo:</h4><h4 id="resumo"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Lingua:</h4><h4 id="lingua"></h4>
+            </div>
+            <div class="bloco">
+              <h4 class="topicos">Pais:</h4><h4 id="pais"></h4>
+            </div>
+            <div class="bloco">
+                <h4 class="topicos">Prêmios:</h4><h4 id="premios"></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

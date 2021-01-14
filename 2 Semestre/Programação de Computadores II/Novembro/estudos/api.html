@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API VIACEP</title>
+    <script>
+        consomeAPI = () =>{
+            let cep = Number(document.getElementById('cep').value)
+            let requisicao = new XMLHttpRequest()
+            let url = `https://viacep.com.br/ws/${cep}/json`
+            requisicao.open('GET',url,true)
+            requisicao.onload = () =>{
+                if(requisicao.readyState === 4){
+                    if(requisicao.status === 200){
+                        let resposta = JSON.parse(requisicao.responseText)
+                        console.log(resposta)
+                    } else{
+                        console.error(requisicao.statusText)
+                    }
+                }
+            }
+            requisicao.onerror = () =>{
+                console.error(requisicao.statusText)
+            }
+            requisicao.send()
+        }
+        /*funcaoapi(){
+            pegaosvalores necessários do document
+            let requisicao = new XMLHttpRequest() (pede a requisicao)
+            let url = `` (pega a url da API)
+            requisicao.open (abre a requisicao)
+            requisicao.onload(){
+                if(requisicao.readyState ===4){ (verificadores)
+                    if(requisicao.status ===200){ (verificadores)
+                        let resposta = JSON.parse(requisicao.responseText) (pegando a resposta da API)
+                    }
+                }
+            }
+            requisicao.send (envia a requisicao)
+        }
+        */
+    </script>
+</head>
+<body>
+    <label>
+        Informe o CEP:
+        <input type="number" id="cep">
+    </label>
+    <button onClick="consomeAPI()">Verificar</button>
+</body>
+</html>
